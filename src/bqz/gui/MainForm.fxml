@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="563.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bqz.gui.controllers.MainController">
+  <children>
+    <MenuBar prefHeight="0.0" prefWidth="748.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Game">
+          <items>
+            <MenuItem fx:id="miNewGame" mnemonicParsing="false" onAction="#handle_miNewGame" text="New Game" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="miQuit" mnemonicParsing="false" onAction="#handle_miQuit" text="Quit" />
+          </items>
+        </Menu>
+            <Menu mnemonicParsing="false" text="History">
+               <items>
+                  <MenuItem fx:id="miViewHistory" mnemonicParsing="false" onAction="#handle_miViewHistory" text="View History" />
+               </items></Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="miAbout" mnemonicParsing="false" onAction="#handle_miAbout" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="661.0" prefWidth="741.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" layoutX="104.0" layoutY="33.0" prefHeight="142.0" prefWidth="503.0" text="Welcome to Buzz! Quiz World" textAlignment="CENTER">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="176.0" layoutY="158.0" prefHeight="65.0" prefWidth="359.0" text="Please enter the number of players that are going to play">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tbPlayerCount" alignment="CENTER" layoutX="176.0" layoutY="210.0" prefHeight="26.0" prefWidth="275.0" promptText="Amount of players..." />
+            <Button fx:id="btnNext" alignment="CENTER" layoutX="463.0" layoutY="207.0" mnemonicParsing="false" onAction="#handle_btnNext" prefHeight="32.0" prefWidth="72.0" text="Next" />
+            <Label layoutX="22.0" layoutY="510.0" text="Made by phxgg &amp; Nikos Zoros" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

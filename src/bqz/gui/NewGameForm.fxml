@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbMain" prefHeight="665.0" prefWidth="947.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bqz.gui.controllers.NewGameController">
+   <children>
+      <MenuBar prefHeight="0.0" prefWidth="748.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Game">
+               <items>
+                  <MenuItem fx:id="miNewGame" mnemonicParsing="false" onAction="#handle_miNewGame" text="New Game" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="miQuit" mnemonicParsing="false" onAction="#handle_miQuit" text="Quit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="History">
+               <items>
+                  <MenuItem fx:id="miViewHistory" mnemonicParsing="false" onAction="#handle_miViewHistory" text="View History" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="miAbout" mnemonicParsing="false" onAction="#handle_miAbout" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="lbRoundType" layoutX="26.0" layoutY="22.0" text="Round Type">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbRoundNumber" layoutX="26.0" layoutY="58.0" text="Round Number">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbQuestionTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="154.0" prefHeight="26.0" prefWidth="947.0" text="Question Title">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbAnswersDescription" layoutX="435.0" layoutY="265.0" text="Answers:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbCategory" alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="89.0" prefHeight="25.0" prefWidth="947.0" text="Category">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbAnswers" layoutX="322.0" layoutY="315.0" text="lbAnswers">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnStartGame" layoutX="420.0" layoutY="369.0" mnemonicParsing="false" onAction="#handle_btnStartGame" prefHeight="36.0" prefWidth="109.0" text="Start Game" />
+            <Label fx:id="lbPlayer1" layoutX="26.0" layoutY="225.0" prefHeight="30.0" prefWidth="81.0" text="lbPlayer1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbPlayer2" contentDisplay="RIGHT" layoutX="844.0" layoutY="225.0" text="lbPlayer2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbPlayer1Points" layoutX="77.0" layoutY="113.0" prefHeight="30.0" prefWidth="92.0" text="lbPlayer1Points">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbPlayer2Points" contentDisplay="RIGHT" layoutX="837.0" layoutY="112.0" prefHeight="30.0" prefWidth="92.0" text="lbPlayer2Points">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbPoints1" layoutX="26.0" layoutY="119.0" text="Points:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbPoints2" layoutX="789.0" layoutY="118.0" text="Points:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgPicture" fitHeight="263.0" fitWidth="291.0" layoutX="23.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lbTimer1" layoutX="26.0" layoutY="180.0" text="lbTimer1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbTimer2" contentDisplay="RIGHT" layoutX="865.0" layoutY="190.0" text="lbTimer2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

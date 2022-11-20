@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="583.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bqz.gui.controllers.HistoryController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="tbScores" layoutX="8.0" layoutY="131.0" prefHeight="445.0" prefWidth="811.0">
+              <columns>
+                <TableColumn fx:id="tcPlayer1" prefWidth="114.0" text="Player 1" />
+                <TableColumn fx:id="tcPoints1" prefWidth="79.0" text="Points 1" />
+                  <TableColumn fx:id="tcPlayer2" prefWidth="122.0" text="Player 2" />
+                  <TableColumn fx:id="tcPoints2" prefWidth="70.0" text="Points 2" />
+                  <TableColumn fx:id="tcWinner" prefWidth="147.0" text="Winner" />
+              </columns>
+            </TableView>
+            <Label layoutX="14.0" layoutY="14.0" text="Solo high score:">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbName" layoutX="21.0" layoutY="58.0" text="lbName">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbScore" layoutX="22.0" layoutY="90.0" text="lbScore">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="680.0" layoutY="101.0" text="Multiplayer Scores">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </children>
+</VBox>
